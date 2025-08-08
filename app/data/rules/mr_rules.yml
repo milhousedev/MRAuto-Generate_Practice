@@ -1,0 +1,60 @@
+defaults:
+  voltage_kv: 69
+  bus_scheme: breaker-per-feeder
+  dc_system_v: 125
+  greenfield: true
+  control_house: true
+
+per_feeder:
+  - item_code: CB-<voltage>-SF6-2000A-40kA
+    qty: 1
+    confidence: 0.85
+  - item_code: SW-<voltage>-DS-3PH
+    qty: 2
+    confidence: 0.85
+  - item_code: CCVT-<voltage>
+    qty: 1
+    confidence: 0.70
+    notes: "Assumed CCVTs as a set of 3 per feeder."
+  - item_code: SA-<voltage>
+    qty: 3
+    confidence: 0.70
+  - item_code: RELAY-FEEDER
+    qty: 1
+    confidence: 0.90
+  - item_code: CTRL-CBL-37PR
+    qty_formula: "200 * feeders"  # ft placeholder
+    confidence: 0.60
+  - item_code: CONDUIT-2IN-PVC
+    qty_formula: "100 * feeders"  # ft placeholder
+    confidence: 0.60
+
+per_transformer:
+  - item_code: XFMR-25MVA-<voltage>-12
+    qty: 1
+    confidence: 0.80
+  - item_code: SA-<voltage>
+    qty: 3
+    confidence: 0.70
+  - item_code: RELAY-XFMR-DIFF
+    qty: 1
+    confidence: 0.90
+
+site_wide:
+  - when: "greenfield"
+    items:
+      - item_code: SCADA-RTU
+        qty: 1
+        confidence: 0.90
+      - item_code: DC-BATT-125V-200AH
+        qty: 1
+        confidence: 0.85
+      - item_code: CHARGER-125V
+        qty: 1
+        confidence: 0.85
+      - item_code: GND-4_0-CU
+        qty_formula: "1500 + 150 * (feeders + transformers)"
+        confidence: 0.60
+      - item_code: GR-10FT
+        qty_formula: "30 + 3 * (feeders + transformers)"
+        confidence: 0.60

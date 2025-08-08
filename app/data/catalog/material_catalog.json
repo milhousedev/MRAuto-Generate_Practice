@@ -1,0 +1,21 @@
+[
+  {"item_code":"CB-69-SF6-2000A-40kA","description":"69 kV SF6 Circuit Breaker, 2000A, 40kA","category":"Primary Equipment","unit":"ea"},
+  {"item_code":"SW-69-DS-3PH","description":"69 kV 3-Phase Gang-Operated Disconnect Switch","category":"Primary Equipment","unit":"ea"},
+  {"item_code":"CCVT-69","description":"69 kV Capacitive Coupled Voltage Transformer (set of 3)","category":"Primary Equipment","unit":"set"},
+  {"item_code":"SA-69","description":"69 kV Surge Arrester","category":"Primary Equipment","unit":"ea"},
+  {"item_code":"XFMR-25MVA-69-12","description":"Power Transformer 69/12 kV, 25 MVA (placeholder)","category":"Primary Equipment","unit":"ea"},
+
+  {"item_code":"RELAY-FEEDER","description":"Feeder Protection Relay (or equal)","category":"Protection & Control","unit":"ea"},
+  {"item_code":"RELAY-XFMR-DIFF","description":"Transformer Differential Relay (or equal)","category":"Protection & Control","unit":"ea"},
+
+  {"item_code":"SCADA-RTU","description":"SCADA/RTU Panel","category":"Communications","unit":"ea"},
+
+  {"item_code":"DC-BATT-125V-200AH","description":"125 V DC Battery Bank, 200 Ah (placeholder)","category":"Protection & Control","unit":"ea"},
+  {"item_code":"CHARGER-125V","description":"Battery Charger, 125 V DC","category":"Protection & Control","unit":"ea"},
+
+  {"item_code":"CTRL-CBL-37PR","description":"Control Cable, multi-pair (placeholder)","category":"Cable & Conduit","unit":"ft"},
+  {"item_code":"CONDUIT-2IN-PVC","description":"2\" PVC Conduit (underground)","category":"Cable & Conduit","unit":"ft"},
+
+  {"item_code":"GND-4_0-CU","description":"4/0 CU Bare Grounding Conductor","category":"Grounding","unit":"ft"},
+  {"item_code":"GR-10FT","description":"Copper-Clad Ground Rod, 10 ft","category":"Grounding","unit":"ea"}
+]
